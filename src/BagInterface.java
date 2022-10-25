@@ -17,4 +17,8 @@ public interface BagInterface<T> {
     public boolean contains(T anEntry);
 
     public T[] toArray();
+
+    public void display();
+
+
 }

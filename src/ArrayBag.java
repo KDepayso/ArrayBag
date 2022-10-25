@@ -117,6 +117,20 @@ public final class ArrayBag<T> implements BagInterface<T> {
         return strResult;
     }
 
+    public void display(){
+        displayArray(0,numberOfEntries - 1);
+    }
+
+    private void displayArray(int first, int last){
+
+        if(first <= last){
+            System.out.println(bag[last]);
+            displayArray(first , last - 1);
+        }
+
+    }
+
+
 }
 
 

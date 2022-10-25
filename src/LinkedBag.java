@@ -100,6 +100,18 @@ public final class LinkedBag<T> implements BagInterface<T> {
         }
         if(found) return currentNode; else return null;
     }
+
+    public void display(){
+        displayArray(firstNode);
+    }
+
+    private void displayArray(MyNode nodeOne){
+        if(nodeOne != null){
+            displayArray(nodeOne.getNext());
+            System.out.println(nodeOne.getData());
+
+        }
+    }
 }
 
 
